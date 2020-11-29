@@ -1,0 +1,161 @@
+*{
+  margin:0;
+  padding:0;
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/*CSS STYLES FOR SEARCHFORM*/
+.form{
+  margin:2.5rem auto;
+  text-align: center;
+  border:0.1rem solid rgb(128, 128, 128);
+  width: 50%;
+  padding:1rem 0 2rem 0;
+
+}
+.form input{
+  width:26rem;
+  padding:.2rem 0.5rem;
+  margin-top: .5rem;
+  border:0.1rem solid blueviolet;
+  
+}
+.form button{
+  margin:0 1rem;
+  width: 5rem;
+  border: none;
+  padding:.3rem;
+  background-color: rgb(0, 252, 13);
+  border-radius: 5px;
+  color: white;
+  font-weight: bolder;
+}
+.form input,button:focus{
+  outline:none;
+  
+}
+.form button:hover{
+  transform: scale(.97);
+}
+.form input ::placeholder{
+ 
+  font-size: 14px;
+}
+
+/*CSS STYLE FOR MOVIE CARD*/
+.movies{
+  width:90%;
+  display: flex;
+  flex-wrap: wrap;
+  margin:2rem auto;
+  justify-content: space-around;
+  text-align: center;
+}
+.movie-details{
+  margin:1rem 0;
+  padding:1rem;
+  background-color: black;
+}
+.movie-details img{
+  width:300px;
+  height:300px; 
+  margin:0rem 1rem;
+  
+}
+.movie-details img:hover{
+  transform: scale(.98);
+}
+.movie-details h5{
+  color:white;
+}
+.details-link{
+  width:7rem;
+  background-color: orangered;
+  padding:0.3rem 0.5rem;
+  border-radius: 5px;
+  color:white;
+  margin:1rem 0;
+}
+.details-link:hover{
+  text-decoration: none;
+  background-color: rgb(255, 0, 0);
+  color:white;
+  font-size: 14px;
+}
+
+
+/*CSS styles for movie page*/
+.movie-page{
+  display:flex;
+  margin:3rem;
+}
+.movie_image img{
+  width:380px;
+  height:400px;
+  padding:0 2rem;
+  margin-top: 2rem;
+  
+}
+ul{
+  border:0.1rem solid grey;
+}
+.movie_details li{
+  list-style-type: none;
+  margin:0.5rem;
+  
+}
+hr{
+  background-color:grey;
+}
+.about-movie{
+  width:80%;
+  min-height:12rem;
+  margin:4rem auto;
+  color:white;
+  background-color: black;
+  border-radius: 10px;
+}
+.about-movie h3{
+  
+  padding: 1rem 0 0rem 1rem;
+}
+.about-movie p {
+  margin: 0 1rem 2rem 1rem;
+}
+ .imdb-url{
+  margin: 1rem;
+  background-color: orangered;
+  padding:0.3rem;
+  color:white;
+  border-radius: 5px;
+}
+.imdb-url:hover{
+  background-color: rgb(255, 30, 0);
+  font-size: 15px;
+  text-decoration: none;
+  color:white;
+}
+.back-to-search{
+  border:0.1rem solid rgb(0, 255, 179);
+  color: aliceblue;
+  padding:0.3rem;
+}
+.back-to-search:hover{
+  background-color: rgb(0, 140, 255);
+  color:white;
+  text-decoration: none;
+}
