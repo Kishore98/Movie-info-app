@@ -46,7 +46,7 @@ export class Movie extends Component {
                         <p>{movie.Plot}</p> 
                         
                         <a className="imdb-url"  href={'https://www.imdb.com/title/' + movie.imdbID}
-                        target="_blank" rel="noreferrer">View on IMDB</a>
+                        target="_blank" rel="noopener noreferrer">View on IMDB</a>
 
                         <Link to ="/" className="back-to-search">Go Back To Search</Link>
                         
@@ -69,5 +69,4 @@ const mapStateToProps=(state)=>({
     loading:state.movies.loading,
     movie:state.movies.movie
 })
-export default connect
-(mapStateToProps,{fetchMovie,setLoading})(Movie) 
+export default connect(mapStateToProps,{fetchMovie,setLoading})(Movie) 
